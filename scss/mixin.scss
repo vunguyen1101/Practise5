@@ -1,0 +1,38 @@
+@mixin txtDefine($height,$align)
+{
+    line-height: $height;
+    text-align: $align;
+}
+
+@mixin fontface($fontfamily,$fontsize,$color,$fontweight) 
+{
+    font-family: $fontfamily;
+    font-size: $fontsize;
+    color: $color;
+    font-weight: $fontweight;
+}
+@mixin buttonStyle {
+    text-align: center;
+    height: 40px;
+    a{
+        text-decoration: none;
+        border-radius: 5px;
+        @include fontface($font-main-bold,14px,#ffffff,normal);
+        display: inline-block;
+        height: 100%;
+        background-color: $main-dark;
+        padding: 0 28px;
+        line-height: 40px;
+    }
+}
+@mixin CenterlizeBlock($height) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: $height;
+}
+@mixin BrgImg ($path){
+    background-image: url($path);
+    background-position: center;
+    background-size: cover;
+}

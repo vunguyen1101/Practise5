@@ -1,0 +1,43 @@
+@import 'mixin';
+@import 'variables';
+
+/////components
+@import 'Components/header';
+@import 'Components/homeMenu';
+@import 'Components/blogs';
+
+// .fa-sun-o:before{
+//     left: 100px;
+//     position: absolute;
+//     font-size: 30px;
+// }
+// .fa-sun-o{
+//     width: 13px;
+//     height: 13px;
+//     border-radius: 13px;
+//     background-color: aqua;
+// }
+footer{
+    background-color: #222222;
+}
+.Footer{
+    
+    text-align: center;
+    &__tittle{
+        @include fontface($font-main-reg,14px,#f3f3f3,normal);
+    }
+    &__descript{
+        width: 770px;
+        display: inline-block;
+        @include fontface($font-main-reg,14px,#7b8189,normal);
+    }
+    &__FAQ{
+        span{
+            margin-right: 30px;
+        }
+        i{
+            margin-right: 7px;
+        }
+        @include fontface($font-main-reg,14px,$main-dark,normal);
+    }
+}

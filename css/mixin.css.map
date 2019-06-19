@@ -1,0 +1,1 @@
+{"version":3,"file":"mixin.css","sources":["mixin.scss"],"sourcesContent":["@mixin makecolor($color) {\r\n    color: $color;\r\n    font-size: 220px;\r\n}\r\n@mixin fontface($fontfamily,$fontsize,$color,$fontweight) \r\n{\r\n    font-family: $fontfamily;\r\n    font-size: $fontsize;\r\n    color: $color;\r\n    font-weight: $fontweight;\r\n}"],"names":[],"mappings":""}

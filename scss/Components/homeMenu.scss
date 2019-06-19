@@ -1,0 +1,124 @@
+//////////////////////////////////// MENU
+.bigTittle{
+    margin:80px 0px 40px;
+    text-align: center;
+    p{
+        margin: 0 0 5px 0;
+    }
+    @include fontface($font-Brush2,72px,$main-dark,normal);
+    &--sub{
+        @include fontface($font-main-reg,14px,#000000,normal);
+    }
+    &--lessMargin{
+        @extend .bigTittle;
+        margin:30px 0px;
+        p{
+            margin-bottom: 15px;
+        }
+    }
+}
+
+.isotope{
+    &__tag{
+        text-align: center;
+        span{
+            cursor: pointer;
+            font-style: italic;
+            @include fontface($font-main-reg,14px,#c6c6c6,normal);
+        }
+        &--cross{
+            margin: 7px;
+        }
+    }
+
+}
+.isotope__item{
+    padding:46px 0;
+    &__name{
+        margin: 20px 0;
+        @include fontface($font-main-bold,18px,#000000,normal);
+    }
+
+    &__decription{
+        @include fontface($font-main-reg,14px,#000000,normal);
+        line-height: 23px;
+    }
+
+    &__price{
+        padding: 10px 0px;
+        border-top: 2px dotted $main-dark;
+        border-bottom: 2px dotted $main-dark;
+        &__single{
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: space-between;
+            &:last-child{
+                margin-bottom: 0;
+            }
+            @include fontface($font-main-reg,14px,$main-dark,normal);
+            span{
+                &:last-child{
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
+.btn{
+    @include buttonStyle();
+}
+.menu__bigposter{
+    margin: 100px 0px;
+    height: 750px;
+    @include BrgImg('../images/mebuBigPoster.jpg');   ///edit path when moving files
+    text-align: center;
+    @include CenterlizeBlock(750px);
+    &__tittle1{
+        @include fontface($font-main-reg,14px,#ffffff,normal);
+    }
+    &__tittle2{
+        &--smaller{ // Discover Background qoute
+            width: 770px;
+            margin: 30px 0 60px;
+            display: inline-block;
+            @include fontface($font-Brush2,30px,#ffffff,normal);
+        }
+
+        margin: 15px 0;
+        @include fontface($font-Brush2,72px,#ffffff,normal);
+    } 
+    &__tittle3{
+        &--shorter{
+            margin-top: 10px ;
+        }
+        @include fontface($font-main-italic,14px,#ffffff,normal);
+    }
+
+    &--quote {
+        margin: 0;
+        @extend .menu__bigposter;
+        @include BrgImg('../images/discovermenuBrg_02.jpg');  
+        height: 550px;
+    }
+}
+.discoverMenu{
+    img{
+        width: 100%;
+    }
+    margin-bottom: 100px;
+}
+.discoverMenu__description{
+    padding: 10px 70px 48px;
+    text-align: center;
+}
+.discoverMenu__img{
+    &--dubVertical{
+        height: 450px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+}
+
+///end MENU

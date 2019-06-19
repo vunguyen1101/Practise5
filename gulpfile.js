@@ -17,7 +17,7 @@ var
 /*SASS: `compressed` `expanded` `compact` `nested`*/
 
 gulp.task('sass', function() {
-    return gulp.src( 'scss/style.scss' )
+    return gulp.src('scss/style.scss')   /*.src('scss/*.scss') */
         .pipe( globbing({
             extensions: ['.scss']
         }))
@@ -35,7 +35,7 @@ gulp.task('sass', function() {
 /*BROSWER SYNC*/
 gulp.task( 'browser-sync', () =>
     browserSync({
-        files: ['css/*.css', 'style.css'],
+        files: ['css/*.css', 'scss/*.scss'],
         server: {
            baseDir: "./"
        },

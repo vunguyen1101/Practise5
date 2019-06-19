@@ -1,0 +1,37 @@
+@font-face {
+  font-family: 'Droid-Bold';
+  font-style: normal;
+  src: url("../fonts/DroidSerif/DroidSerif-Bold.ttf");
+}
+
+@font-face {
+  font-family: 'Droid-Bold-Italic';
+  font-style: normal;
+  src: url("../fonts/DroidSerif/DroidSerif-BoldItalic.ttf");
+}
+
+@font-face {
+  font-family: 'Droid-Italic';
+  font-style: normal;
+  src: url("../fonts/DroidSerif/DroidSerif-Italic.ttf");
+}
+
+@font-face {
+  font-family: 'Droid-regular';
+  font-style: normal;
+  src: url("../fonts/DroidSerif/DroidSerif-Regular.ttf");
+}
+
+@font-face {
+  font-family: 'Brush';
+  font-style: normal;
+  src: url("../fonts/BrushMT/BRUSHSCI.ttf");
+}
+
+@font-face {
+  font-family: 'Brush2';
+  font-style: normal;
+  src: url("../fonts/BrushMT/brush script mt kursiv.ttf");
+}
+
+/*# sourceMappingURL=variables.css.map */

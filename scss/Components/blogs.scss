@@ -1,0 +1,39 @@
+.blogPost{
+    padding-top: 30px;
+    margin-bottom: 30px;
+    height: 300px;
+    &--addBrg{
+        @include BrgImg ('../images/ourBlogthum1.jpg');
+        height: 300px;
+    }
+    
+    &__tip{
+        margin-bottom: 20px;
+        @include fontface($font-main-reg,12px,#a3a3a3,normal);
+    }
+    &__tittle{
+        @include fontface($font-main-bold,18px,#000000,normal);
+    }
+    &__author{
+        margin: 10px 0 15px;
+        @include fontface($font-main-italic,14px,#000000,normal);
+        span{
+            color: $main-dark;
+        }
+    }
+    &__descript{
+        @include fontface($font-main-reg,14px,#000000,normal);
+        line-height: 23px;
+    }
+    span{
+        @include fontface($font-main-bold,12px,$main-dark,normal);
+    }
+}
+.btn--spinner{
+    i{
+        margin-right:5px;
+    }
+    margin-top: 17px;
+    text-align: center;
+    @include fontface($font-main-italic,12px,#a3a3a3,normal);
+}

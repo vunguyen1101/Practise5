@@ -1,0 +1,472 @@
+@font-face {
+  font-family: 'awsome';
+  font-style: normal;
+  src: url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css");
+}
+
+@font-face {
+  font-family: 'Droid-Bold';
+  font-style: normal;
+  src: url("../fonts/DroidSerif/DroidSerif-Bold.ttf");
+}
+
+@font-face {
+  font-family: 'Droid-Bold-Italic';
+  font-style: normal;
+  src: url("../fonts/DroidSerif/DroidSerif-BoldItalic.ttf");
+}
+
+@font-face {
+  font-family: 'Droid-Italic';
+  font-style: normal;
+  src: url("../fonts/DroidSerif/DroidSerif-Italic.ttf");
+}
+
+@font-face {
+  font-family: 'Droid-regular';
+  font-style: normal;
+  src: url("../fonts/DroidSerif/DroidSerif-Regular.ttf");
+}
+
+@font-face {
+  font-family: 'Brush';
+  font-style: normal;
+  src: url("../fonts/BrushMT/BRUSHSCI.ttf");
+}
+
+@font-face {
+  font-family: 'Brush2';
+  font-style: normal;
+  src: url("../fonts/BrushMT/brush script mt kursiv.ttf");
+}
+
+header {
+  height: 113px;
+  line-height: 113px;
+}
+
+header a {
+  text-decoration: none;
+  font-family: "Droid-regular";
+  font-size: 14px;
+  color: #ffffff;
+  font-weight: normal;
+}
+
+.header__flexbox {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+nav a {
+  margin-left: 50px;
+}
+
+.scn--Brg {
+  width: 100%;
+  height: 1290px;
+  background-image: url("../../images/HeadBrg.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.header__mainlogo {
+  margin-top: 240px;
+  text-align: center;
+  width: 100%;
+}
+
+.header__mainlogo--content1 {
+  font-family: "Brush";
+  font-size: 30px;
+  color: #ffffff;
+  font-weight: normal;
+}
+
+.header__mainlogo--content2 {
+  display: inline-block;
+  margin: 20px;
+  letter-spacing: 15px;
+  border-top: 5px solid #ffffff;
+  border-bottom: 5px solid #ffffff;
+  font-family: "Droid-Bold";
+  font-size: 72px;
+  color: #ffffff;
+  font-weight: normal;
+}
+
+.header__mainlogo--content3 {
+  letter-spacing: 2px;
+  font-family: "Droid-regular";
+  font-size: 14px;
+  color: #ffffff;
+  font-weight: normal;
+}
+
+.scn__Introduce .row {
+  padding: 0 15px;
+}
+
+.scn__Introduce .row .col-lg-4 {
+  padding: 0;
+}
+
+.header__poster {
+  position: relative;
+  height: 780px;
+  margin-top: -390px;
+  padding-bottom: 35px;
+  text-align: center;
+  background-color: #313b4b;
+}
+
+.header__poster img {
+  width: 100%;
+}
+
+.header__poster .post__viewfull {
+  cursor: pointer;
+  font-family: "Droid-Italic";
+  font-size: 14px;
+  color: #c3917d;
+  font-weight: normal;
+}
+
+.header__poster .post__viewfull i {
+  margin-right: 5px;
+}
+
+.header__poster .poster__line {
+  width: 75%;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  bottom: 35px;
+}
+
+.poster__tag {
+  height: 100px;
+  line-height: 100px;
+  font-family: "Brush2";
+  font-size: 36px;
+  color: #ffffff;
+  font-weight: normal;
+}
+
+.poster__info {
+  line-height: 23px;
+  padding: 30px 70px;
+  text-align: center;
+  font-family: "Droid-regular";
+  font-size: 14px;
+  color: #7b8189;
+  font-weight: normal;
+}
+
+.poster__info span {
+  color: #c3917d;
+}
+
+.poster__info div {
+  margin-bottom: 20px;
+}
+
+.poster__info div:last-child {
+  margin-bottom: 0;
+}
+
+.bigTittle, .bigTittle--lessMargin {
+  margin: 80px 0px 40px;
+  text-align: center;
+  font-family: "Brush2";
+  font-size: 72px;
+  color: #c3917d;
+  font-weight: normal;
+}
+
+.bigTittle p, .bigTittle--lessMargin p {
+  margin: 0 0 5px 0;
+}
+
+.bigTittle--sub {
+  font-family: "Droid-regular";
+  font-size: 14px;
+  color: #000000;
+  font-weight: normal;
+}
+
+.bigTittle--lessMargin {
+  margin: 30px 0px;
+}
+
+.bigTittle--lessMargin p {
+  margin-bottom: 15px;
+}
+
+.isotope__tag {
+  text-align: center;
+}
+
+.isotope__tag span {
+  cursor: pointer;
+  font-style: italic;
+  font-family: "Droid-regular";
+  font-size: 14px;
+  color: #c6c6c6;
+  font-weight: normal;
+}
+
+.isotope__tag--cross {
+  margin: 7px;
+}
+
+.isotope__item {
+  padding: 46px 0;
+}
+
+.isotope__item__name {
+  margin: 20px 0;
+  font-family: "Droid-Bold";
+  font-size: 18px;
+  color: #000000;
+  font-weight: normal;
+}
+
+.isotope__item__decription {
+  font-family: "Droid-regular";
+  font-size: 14px;
+  color: #000000;
+  font-weight: normal;
+  line-height: 23px;
+}
+
+.isotope__item__price {
+  padding: 10px 0px;
+  border-top: 2px dotted #c3917d;
+  border-bottom: 2px dotted #c3917d;
+}
+
+.isotope__item__price__single {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Droid-regular";
+  font-size: 14px;
+  color: #c3917d;
+  font-weight: normal;
+}
+
+.isotope__item__price__single:last-child {
+  margin-bottom: 0;
+}
+
+.isotope__item__price__single span:last-child {
+  font-weight: bold;
+}
+
+.btn {
+  text-align: center;
+  height: 40px;
+}
+
+.btn a {
+  text-decoration: none;
+  border-radius: 5px;
+  font-family: "Droid-Bold";
+  font-size: 14px;
+  color: #ffffff;
+  font-weight: normal;
+  display: inline-block;
+  height: 100%;
+  background-color: #c3917d;
+  padding: 0 28px;
+  line-height: 40px;
+}
+
+.menu__bigposter, .menu__bigposter--quote {
+  margin: 100px 0px;
+  height: 750px;
+  background-image: url("../images/mebuBigPoster.jpg");
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 750px;
+}
+
+.menu__bigposter__tittle1 {
+  font-family: "Droid-regular";
+  font-size: 14px;
+  color: #ffffff;
+  font-weight: normal;
+}
+
+.menu__bigposter__tittle2 {
+  margin: 15px 0;
+  font-family: "Brush2";
+  font-size: 72px;
+  color: #ffffff;
+  font-weight: normal;
+}
+
+.menu__bigposter__tittle2--smaller {
+  width: 770px;
+  margin: 30px 0 60px;
+  display: inline-block;
+  font-family: "Brush2";
+  font-size: 30px;
+  color: #ffffff;
+  font-weight: normal;
+}
+
+.menu__bigposter__tittle3 {
+  font-family: "Droid-Italic";
+  font-size: 14px;
+  color: #ffffff;
+  font-weight: normal;
+}
+
+.menu__bigposter__tittle3--shorter {
+  margin-top: 10px;
+}
+
+.menu__bigposter--quote {
+  margin: 0;
+  background-image: url("../images/discovermenuBrg_02.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 550px;
+}
+
+.discoverMenu {
+  margin-bottom: 100px;
+}
+
+.discoverMenu img {
+  width: 100%;
+}
+
+.discoverMenu__description {
+  padding: 10px 70px 48px;
+  text-align: center;
+}
+
+.discoverMenu__img--dubVertical {
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.blogPost {
+  padding-top: 30px;
+  margin-bottom: 30px;
+  height: 300px;
+}
+
+.blogPost--addBrg {
+  background-image: url("../images/ourBlogthum1.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 300px;
+}
+
+.blogPost__tip {
+  margin-bottom: 20px;
+  font-family: "Droid-regular";
+  font-size: 12px;
+  color: #a3a3a3;
+  font-weight: normal;
+}
+
+.blogPost__tittle {
+  font-family: "Droid-Bold";
+  font-size: 18px;
+  color: #000000;
+  font-weight: normal;
+}
+
+.blogPost__author {
+  margin: 10px 0 15px;
+  font-family: "Droid-Italic";
+  font-size: 14px;
+  color: #000000;
+  font-weight: normal;
+}
+
+.blogPost__author span {
+  color: #c3917d;
+}
+
+.blogPost__descript {
+  font-family: "Droid-regular";
+  font-size: 14px;
+  color: #000000;
+  font-weight: normal;
+  line-height: 23px;
+}
+
+.blogPost span {
+  font-family: "Droid-Bold";
+  font-size: 12px;
+  color: #c3917d;
+  font-weight: normal;
+}
+
+.btn--spinner {
+  margin-top: 17px;
+  text-align: center;
+  font-family: "Droid-Italic";
+  font-size: 12px;
+  color: #a3a3a3;
+  font-weight: normal;
+}
+
+.btn--spinner i {
+  margin-right: 5px;
+}
+
+footer {
+  background-color: #222222;
+}
+
+.Footer {
+  text-align: center;
+}
+
+.Footer__tittle {
+  font-family: "Droid-regular";
+  font-size: 14px;
+  color: #f3f3f3;
+  font-weight: normal;
+}
+
+.Footer__descript {
+  width: 770px;
+  display: inline-block;
+  font-family: "Droid-regular";
+  font-size: 14px;
+  color: #7b8189;
+  font-weight: normal;
+}
+
+.Footer__FAQ {
+  font-family: "Droid-regular";
+  font-size: 14px;
+  color: #c3917d;
+  font-weight: normal;
+}
+
+.Footer__FAQ span {
+  margin-right: 30px;
+}
+
+.Footer__FAQ i {
+  margin-right: 7px;
+}
+
+/*# sourceMappingURL=style.css.map */

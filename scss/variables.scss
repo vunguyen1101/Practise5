@@ -1,0 +1,48 @@
+$main-dark:#c3917d;
+$sub-infomation:#bababa;
+// #7b8189
+
+////////////////////////////////////////////////////////////// fonts
+$font-main-reg:'Droid-regular';
+$font-main-bold:'Droid-Bold';
+$font-main-boldItalic:'Droid-Bold-Italic';
+$font-main-italic:'Droid-Italic';
+$font-Brush:'Brush';
+$font-Brush2:'Brush2';
+
+
+@font-face {
+    font-family: 'awsome';
+    font-style: normal;
+    src: url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css'); 
+}
+@font-face {
+    font-family: 'Droid-Bold';
+    font-style: normal;
+    src: url('../fonts/DroidSerif/DroidSerif-Bold.ttf'); 
+}
+@font-face {
+    font-family: 'Droid-Bold-Italic';
+    font-style: normal;
+    src: url('../fonts/DroidSerif/DroidSerif-BoldItalic.ttf'); 
+}
+@font-face {
+    font-family: 'Droid-Italic';
+    font-style: normal;
+    src: url('../fonts/DroidSerif/DroidSerif-Italic.ttf'); 
+}
+@font-face {
+    font-family: 'Droid-regular';
+    font-style: normal;
+    src: url('../fonts/DroidSerif/DroidSerif-Regular.ttf'); 
+}
+@font-face {
+    font-family: 'Brush';
+    font-style: normal;
+    src: url('../fonts/BrushMT/BRUSHSCI.ttf'); 
+}
+@font-face {
+    font-family: 'Brush2';
+    font-style: normal;
+    src: url('../fonts/BrushMT/brush\ script\ mt\ kursiv.ttf'); 
+}
