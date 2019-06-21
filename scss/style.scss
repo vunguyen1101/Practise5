@@ -3,41 +3,74 @@
 
 /////components
 @import 'Components/header';
+@import 'Components/footer';
 @import 'Components/homeMenu';
 @import 'Components/blogs';
 
-// .fa-sun-o:before{
-//     left: 100px;
-//     position: absolute;
-//     font-size: 30px;
-// }
-// .fa-sun-o{
-//     width: 13px;
-//     height: 13px;
-//     border-radius: 13px;
-//     background-color: aqua;
-// }
-footer{
-    background-color: #222222;
-}
-.Footer{
-    
-    text-align: center;
-    &__tittle{
-        @include fontface($font-main-reg,14px,#f3f3f3,normal);
-    }
-    &__descript{
-        width: 770px;
-        display: inline-block;
-        @include fontface($font-main-reg,14px,#7b8189,normal);
-    }
-    &__FAQ{
-        span{
-            margin-right: 30px;
-        }
+/////pages
+@import 'pages/blogGrid';
+
+.Author{
+    span{
         i{
-            margin-right: 7px;
+            margin-right: 5px;
         }
-        @include fontface($font-main-reg,14px,$main-dark,normal);
+        margin-right: 35px;
     }
+}
+
+@include Responsive(XS){
+    .Author{
+        span{
+            text-align: left;
+            margin-bottom: 10px;
+            display: block;
+        }
+    }
+}
+// $font-main-boldItalic
+.aside{
+    line-height: 23px;
+    &__SingleDcsrpt{
+        @include fontface($font-main-reg,14px,#000000,normal);
+        margin: 30px 0;
+    }
+
+    &__verticalLine{
+        @include fontface($font-main-boldItalic,18px,$sub-infomation,normal);
+        border-left: 3px solid $main-dark;
+        padding-left: 20px;
+    }
+    ul{
+        li{
+            list-style-type: none;
+            &::before{
+                content: "■";
+                color: $main-dark;
+                margin-right: 10px;
+            }
+            padding-bottom: 15px;
+            &:last-child{
+                padding: 0;
+            }
+        }
+    }
+    &__tagDcript{
+        i{
+            margin-left: 10px;
+        }
+        @include fontface($font-main-reg,13px,$sub-infomation,normal);
+
+        .tag,.fa-print {
+            color: #000000;
+        }
+        .demo{
+            color: $main-dark;
+        }
+        .tagMedia{
+            float: right;
+            font-size: 16px;
+        }
+    }
+
 }

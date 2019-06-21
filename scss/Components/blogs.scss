@@ -6,6 +6,13 @@
         @include BrgImg ('../images/ourBlogthum1.jpg');
         height: 300px;
     }
+    &--addBrg2{
+        @include BrgImg ('../images/ourBlogthum2.jpg');
+        height: 300px;
+        @media (max-width:350px){
+            margin-top: 70px;
+        }
+    }
     
     &__tip{
         margin-bottom: 20px;
@@ -33,7 +40,12 @@
     i{
         margin-right:5px;
     }
+    a{
+        text-decoration: none !important;
+        color:inherit !important; 
+    }
     margin-top: 17px;
     text-align: center;
     @include fontface($font-main-italic,12px,#a3a3a3,normal);
 }
+

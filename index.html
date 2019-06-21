@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Cherry</title>
+    
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/bootstrap-grid.min.css">
@@ -16,13 +17,26 @@
         <header>
             <div class="container">      
                 <div class="header__flexbox">
-                    <div class="header__logo"><a href="#">CHERRY</a></div>
-                    <nav>
+                    <div class="header__logo"><a href="index.html">CHERRY</a></div>
+                    <nav class="nav__desktop">
+                        <span><a href="index.html">Home</a></span>
+                        <span><a href="#">About</a></span>
+                        <span><a href="#">Menus</a></span>
+                        <span><a href="#">Gallery</a></span>
+                        <span><a href="blogGrid.html">Blog</a></span>
+                        <span><a href="#">Pages</a></span>
+                    </nav>
+                    <div class="nav__hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <nav class="nav__mobile">
                         <span><a href="#">Home</a></span>
                         <span><a href="#">About</a></span>
                         <span><a href="#">Menus</a></span>
                         <span><a href="#">Gallery</a></span>
-                        <span><a href="#">Blog</a></span>
+                        <span><a href="blogGrid.html">Blog</a></span>
                         <span><a href="#">Pages</a></span>
                     </nav>
                 </div>
@@ -48,8 +62,8 @@
     <section class="scn__Introduce">
         <div class="container">
             <div class="row">
-                <div class="col-lg-4">
-                    <div class="header__poster">
+                <div class="col-lg-4 col-md-4 col-12">
+                    <div class="header__poster header__poster--smMargin">
                         <img src="images/dish1.jpg" alt="dish1">
                         <span class="poster__tag">Our Stories</span>
                         <div class="poster__info">
@@ -61,7 +75,7 @@
                         <img class="poster__line" src="images/posterLine.png" alt="line">
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-4 col-md-4 col-12">
                     <div class="header__poster">
                         <img src="images/dish2.jpg" alt="dish1">
                         <span class="poster__tag">Opening Hours</span>
@@ -73,7 +87,7 @@
                         <img class="poster__line" src="images/posterLine.png" alt="line">
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-4 col-md-4 col-12">
                     <div class="header__poster">
                         <img src="images/dish3.jpg" alt="dish1">
                         <span class="poster__tag">Make A Reservation</span>
@@ -96,17 +110,16 @@
                 <p class="bigTittle--sub">WE OFFER THE BEST TASTE EXPERIENCE</p>
             </div>
             <div class="isotope">
-                <div class="isotope__tag">
-                    <span>All</span><span class="isotope__tag--cross">/</span>
-                    <span>Breakfast</span><span class="isotope__tag--cross">/</span>
-                    <span>Lunch</span><span class="isotope__tag--cross">/</span>
-                    <span>Dinner</span><span class="isotope__tag--cross">/</span>
-                    <span>Drink</span><span class="isotope__tag--cross">/</span>
+                <div class="isotope__tags">
+                    <span data-filter="*" class="isotope__tag active">All</span><span class="isotope__tag--cross">/</span>
+                    <span data-filter=".breakfast" class="isotope__tag">Breakfast</span><span class="isotope__tag--cross">/</span>
+                    <span data-filter=".lunch" class="isotope__tag">Lunch</span><span class="isotope__tag--cross">/</span>
+                    <span data-filter=".dinner" class="isotope__tag">Dinner</span><span class="isotope__tag--cross">/</span>
+                    <span data-filter=".drink" class="isotope__tag">Drink</span><span class="isotope__tag--cross">/</span>
                 </div>
-                
                 <div class="row">
-                    <div class="col-lg-3">
-                        <div class="isotope__item">
+                    <div class="col-lg-3 col-sm-6 breakfast lunch">
+                        <div class="isotope__item ">
                             <img src="images/SpecialDish1.jpg" alt="spdis1">
                             <div class="isotope__item__name">
                                 Pear-blue cheese salad
@@ -127,8 +140,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3">
-                        <div class="isotope__item">
+                    <div class="col-lg-3 col-sm-6 lunch drink">
+                        <div class="isotope__item ">
                             <img src="images/SpecialDish2_03.jpg" alt="spdis1">
                             <div class="isotope__item__name">
                                 Avocado basil pasta
@@ -149,8 +162,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3">
-                     <div class="isotope__item">
+                    <div class="col-lg-3 col-sm-6 dinner breakfast" >
+                        <div class="isotope__item ">
                             <img src="images/SpecialDish3_03.jpg" alt="spdis1">
                             <div class="isotope__item__name">
                                 Garlic bread with chard
@@ -171,8 +184,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3">
-                        <div class="isotope__item">
+                    <div class="col-lg-3 col-sm-6 drink dinner">
+                        <div class="isotope__item ">
                             <img src="images/SpecialDish4_03.jpg" alt="spdis1">
                             <div class="isotope__item__name">
                                 Chicken enchiladas adobo
@@ -216,16 +229,14 @@
             <div class="row">
                 <div class="col-lg-6">
                     <div class="discoverMenu discoverMenu__img">
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <img src="images/DISCOVERmenu.jpg" alt="dicoverimg1">
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="discoverMenu__img--dubVertical">
-                                    <img class="discover__dubImg" src="images/DISCOVERmenu2.jpg" alt="dicoverimg2">
-                                    <img class="discover__dubImg" src="images/DISCOVERmenu3.jpg" alt="dicoverimg3">
-                                </div>
-                            </div>
+                        <div class="discoverMenu__img--grid">
+                            <img src="images/DISCOVERmenu.jpg" alt="dicoverimg1">
+                        </div>
+                        <div class="discoverMenu__img--grid">
+                            <img class="discover__dubImg" src="images/DISCOVERmenu2.jpg" alt="dicoverimg2">
+                        </div>
+                        <div class="discoverMenu__img--grid">
+                            <img class="discover__dubImg" src="images/DISCOVERmenu3.jpg" alt="dicoverimg3">
                         </div>
                     </div>
                 </div>
@@ -268,15 +279,17 @@
         </div>
 
         <div class="menu__bigposter--quote">
-            <div class="menu__bigposter__tittle">
-                <p class="menu__bigposter__tittle1">DON’T HEAR FROM US ONLY. HEAR OTHERS, TOO</p>
-                <p class="menu__bigposter__tittle2--smaller">
-                    In tristique diam a nisl Lorem, ipsum dolor. vulputate eleifend. Etiam varius eu ex Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid rerum repellat sunt dicta veritatis deleniti.
-                </p>   
-                <p class="menu__bigposter__tittle1 ">BRYAN KEITH</p>
-                <p class="menu__bigposter__tittle3 menu__bigposter__tittle3--shorter">
-                    Chef of Cherry
-                </p> 
+            <div class="container">
+                <div class="menu__bigposter__tittle">
+                    <p class="menu__bigposter__tittle1">DON’T HEAR FROM US ONLY. HEAR OTHERS, TOO</p>
+                    <p class="menu__bigposter__tittle2--smaller">
+                        In tristique diam a nisl Lorem, ipsum dolor. vulputate eleifend. Etiam varius eu ex Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid rerum repellat sunt dicta veritatis deleniti.
+                    </p>   
+                    <p class="menu__bigposter__tittle1 ">BRYAN KEITH</p>
+                    <p class="menu__bigposter__tittle3 menu__bigposter__tittle3--shorter">
+                        Chef of Cherry
+                    </p> 
+                </div>
             </div>
         </div>
     </section>
@@ -306,11 +319,13 @@
                     <p class="blogPost__descript">Integer facilisis tincidunt turpis, non finibus velit varius at Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque eius dolorem a blanditiis vero reprehenderit vel hic dicta totam harum ex dolorum accusamus, voluptate, aut eligendi enim exercitationem dolore quis Lorem, ipsum dolor. </p>
                     <span>CONTINUE READING</span>
                 </div>
-                <div class="blogPost blogPost--addBrg"></div>
+                <div class="blogPost blogPost--addBrg2"></div>
             </div>
         </div>
         <div class="btn--spinner">
-            <i class="fa fa-spinner"></i><span>VIEW ALL POSTS</span>
+            <a href="blogGrid.html">
+                <i class="fa fa-spinner"></i><span>VIEW ALL POSTS</span>
+            </a> 
         </div>
     </div>
     </section>
@@ -334,14 +349,18 @@
     </footer>
     <div class="Footer__copyright">
         <div>
-            <div class="media">
+            <div class="Footer__copyright__media">
                 <i class="fa fa-facebook"></i>
                 <i class="fa fa-twitter"></i>
                 <i class="fa fa-google-plus "></i>
                 <i class="fa fa-pinterest-p"></i>
-            </div><br>
+            </div>
             <span>2015 AliceMaid. Designed with <i class="fa fa-heart-o"></i> by leehari</span>
         </div>
     </div>
+       
+    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/isotope.pkgd.min.js"></script>
 </body>
 </html>

@@ -15,24 +15,32 @@
         p{
             margin-bottom: 15px;
         }
+        @include Responsive(XS){
+            font-size: 62px;
+        }
+    }
+}
+.active{
+    color: $main-dark !important;
+}
+.isotope__tags{
+    text-align: center;
+    color: #c6c6c6;
+}
+.isotope__tag{
+    text-align: center;
+    cursor: pointer;
+    font-style: italic;
+    @include fontface($font-main-reg,14px,#c6c6c6,normal);
+    &--cross{
+        margin: 7px;
     }
 }
 
-.isotope{
-    &__tag{
-        text-align: center;
-        span{
-            cursor: pointer;
-            font-style: italic;
-            @include fontface($font-main-reg,14px,#c6c6c6,normal);
-        }
-        &--cross{
-            margin: 7px;
-        }
-    }
-
-}
 .isotope__item{
+    img{
+        width: 100%;
+    }
     padding:46px 0;
     &__name{
         margin: 20px 0;
@@ -82,6 +90,9 @@
             margin: 30px 0 60px;
             display: inline-block;
             @include fontface($font-Brush2,30px,#ffffff,normal);
+            @media (max-width:991px){
+                width: unset;
+            }
         }
 
         margin: 15px 0;
@@ -111,14 +122,21 @@
     padding: 10px 70px 48px;
     text-align: center;
 }
-.discoverMenu__img{
-    &--dubVertical{
-        height: 450px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+.discoverMenu__img--grid{
+    width: 100%;
+    height: 100%;
+    &:first-child{
+        grid-row: 1 / span 2;
     }
-
+}
+.discoverMenu__img{
+    img{
+        height: 100%;
+    }
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
 }
 
 ///end MENU

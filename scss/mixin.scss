@@ -14,6 +14,9 @@
 @mixin buttonStyle {
     text-align: center;
     height: 40px;
+    i{
+        margin-right: 10px;
+    }
     a{
         text-decoration: none;
         border-radius: 5px;
@@ -24,6 +27,7 @@
         padding: 0 28px;
         line-height: 40px;
     }
+
 }
 @mixin CenterlizeBlock($height) {
     display: flex;
@@ -35,4 +39,53 @@
     background-image: url($path);
     background-position: center;
     background-size: cover;
+}
+@mixin Boxshadow($prop){
+    -webkit-box-shadow: $prop;
+    -moz-box-shadow: $prop;
+    box-shadow: $prop;
+}
+@mixin Tranform($prop){
+    -webkit-transform: $prop;
+    -moz-transform: $prop;
+    -o-transform: $prop;
+    transform: $prop;
+}
+@mixin TranformOrigin($prop){
+    -webkit-transform-origin: $prop;
+    -moz-transform-origin: $prop;
+    -o-transform-origin: $prop;
+    transform-origin: $prop;
+}
+@mixin Transition($prop){
+    -webkit-transition: $prop;
+    -moz-transition: $prop;
+    -o-transition: $prop;
+    transition: $prop;
+}
+
+
+// media queries
+$XS:     480px;   
+$SM:     767px;  
+$XSM:     991px;
+$MD:    1023px;   
+$XL:   1199px;   
+
+@mixin Responsive($canvas) {
+  @if $canvas == XS {
+   @media only screen and (max-width: $XS){ @content; } 
+  }
+  @else if $canvas == SM {
+   @media (min-width: $XS) and (max-width: $SM)  { @content; } 
+  }
+  @else if $canvas == XSM {
+    @media (min-width: $SM) and (max-width: $XSM)  { @content; } 
+   }
+  @else if $canvas == MD {
+   @media (min-width: $XSM) and (max-width: $MD) { @content; } 
+  }
+  @else if $canvas == XL {
+   @media (min-width: $MD) and (max-width: $XL) { @content; } 
+  }
 }
