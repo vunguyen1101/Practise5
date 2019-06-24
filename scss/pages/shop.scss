@@ -1,0 +1,69 @@
+.isotope__item__name--shop{
+    @extend .isotope__item__name;
+    margin-bottom: 10px; 
+}
+.isotope__item__price--shop{
+    @include fontface($font-main-italic,14px,$Super-dark,normal); 
+}
+.isotope__item--shop{
+    @extend .isotope__item;
+    padding-top: 0;
+    &:hover{
+        p{
+            display: block;
+        }
+        .shopitem__hover{
+            &::before{
+                display: block;
+            }
+        }
+    }
+}
+.scn__Brg--shop{
+    @extend .scn__Brg;
+    background-image: url('../images/08shopHeadBrg.jpg');
+    height: 350px;
+}
+.isotope__tags--shop{
+    @extend .isotope__tags;
+    margin: 100px 0 46px;
+}
+.shopHeader__tittle{
+    @extend .header__mainlogo--content2;
+    font-size: 48px;
+    letter-spacing: 10px; 
+}
+.shopHeader__containerTit{
+    text-align: center;
+    margin-top: 40px;
+}
+.shop__dish{
+    display: block;
+    text-decoration: none;
+}
+.shopitem__hover{
+    width: 100%;
+    position: relative;
+    p{
+        display: none;
+        left: 50%;
+        top:50%;
+        transform: translate(-50%,-50%);
+        color: $main-dark;
+        position: absolute;
+        span{
+            margin-left: 5px;
+            @include fontface($font-main-bold,14px,$main-dark,normal);
+        }
+    }
+    &::before{
+        display: none;
+        position: absolute;
+        content: ""; 
+        width: 100%;
+        height:100%;
+        background-color: #ffffff;
+        border: 1px solid $main-dark;
+    }
+
+}

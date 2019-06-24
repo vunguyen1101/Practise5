@@ -1,0 +1,65 @@
+.Meal{
+    margin:100px 0 40px;
+    &__Img{
+        width: 100%;
+    }
+    &__name{
+        margin: 15px 0;
+        @include fontface($font-main-bold,30px,$Super-dark,normal);
+    }
+    &__rate{
+        i{
+            color: $main-dark;
+            font-size: 14px;
+        }
+        span{
+            display: inline-block;
+            margin-left: 10px;
+            @include fontface($font-main-reg,14px,$Super-dark,normal);
+        }
+    }
+    &__price{
+        margin-top: 30px;
+        @include fontface($font-main-reg,30px,$Super-dark,normal);
+    }
+    &__note{
+        font-style: italic;
+    }
+    &__category{
+        @include fontface($font-main-bold,12px,#b9b9b9,normal);
+    }
+    &__Order{
+        margin-bottom: 30px;
+        display: flex;
+        .btn--quantity{
+            @extend .btn;
+            margin-left: 50px;
+        }
+    }
+}
+.Meal__descript{
+    @extend .aside__SingleDcsrpt;
+}
+.Meal__Quantity{
+    display: flex;
+    button{
+        height: 40px;
+        width: 40px;
+        background-color: #ffffff;
+        border: 2px solid $main-dark;
+        border-radius: 4px;
+        color: $main-dark;
+    }
+    input{
+        margin: 0 1px;
+        border-radius: 4px;
+        border: 2px solid $main-dark;
+        width: 70px;
+        height: 40px;
+        @include txtDefine(40px, center);
+        @include fontface($font-main-bold,14px,$main-dark,normal);
+    }
+}
+.Meal__carousel{
+    margin-top: 50px;
+}

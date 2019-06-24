@@ -7,7 +7,7 @@
     }
     @include fontface($font-Brush2,72px,$main-dark,normal);
     &--sub{
-        @include fontface($font-main-reg,14px,#000000,normal);
+        @include fontface($font-main-reg,14px,$Super-dark,normal);
     }
     &--lessMargin{
         @extend .bigTittle;
@@ -38,17 +38,19 @@
 }
 
 .isotope__item{
+    text-decoration: none;
+    display: block;
     img{
         width: 100%;
     }
     padding:46px 0;
     &__name{
         margin: 20px 0;
-        @include fontface($font-main-bold,18px,#000000,normal);
+        @include fontface($font-main-bold,18px,$Super-dark,normal);
     }
 
     &__decription{
-        @include fontface($font-main-reg,14px,#000000,normal);
+        @include fontface($font-main-reg,14px,$Super-dark,normal);
         line-height: 23px;
     }
 

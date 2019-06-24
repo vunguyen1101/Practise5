@@ -1,11 +1,5 @@
 @charset "UTF-8";
 @font-face {
-  font-family: 'awsome';
-  font-style: normal;
-  src: url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css");
-}
-
-@font-face {
   font-family: 'Droid-Bold';
   font-style: normal;
   src: url("../fonts/DroidSerif/DroidSerif-Bold.ttf");
@@ -70,7 +64,7 @@ nav a {
   margin-left: 50px;
 }
 
-.scn--Brg {
+.scn__Brg, .scn__Brg--shop {
   width: 100%;
   height: 1290px;
   background-image: url("../../images/HeadBrg.jpg");
@@ -91,7 +85,7 @@ nav a {
   font-weight: normal;
 }
 
-.header__mainlogo--content2 {
+.header__mainlogo--content2, .shopHeader__tittle {
   display: inline-block;
   margin: 20px;
   letter-spacing: 15px;
@@ -342,7 +336,7 @@ nav a {
 }
 
 @media only screen and (max-width: 480px) {
-  .header__mainlogo--content2 {
+  .header__mainlogo--content2, .shopHeader__tittle {
     font-size: 40px;
   }
   .header__poster {
@@ -508,7 +502,7 @@ footer {
   color: #c3917d !important;
 }
 
-.isotope__tags {
+.isotope__tags, .isotope__tags--shop {
   text-align: center;
   color: #c6c6c6;
 }
@@ -527,15 +521,17 @@ footer {
   margin: 7px;
 }
 
-.isotope__item {
+.isotope__item, .isotope__item--shop {
+  text-decoration: none;
+  display: block;
   padding: 46px 0;
 }
 
-.isotope__item img {
+.isotope__item img, .isotope__item--shop img {
   width: 100%;
 }
 
-.isotope__item__name {
+.isotope__item__name, .isotope__item__name--shop {
   margin: 20px 0;
   font-family: "Droid-Bold";
   font-size: 18px;
@@ -575,16 +571,16 @@ footer {
   font-weight: bold;
 }
 
-.btn {
+.btn, .Meal__Order .btn--quantity {
   text-align: center;
   height: 40px;
 }
 
-.btn i {
+.btn i, .Meal__Order .btn--quantity i {
   margin-right: 10px;
 }
 
-.btn a {
+.btn a, .Meal__Order .btn--quantity a {
   text-decoration: none;
   border-radius: 5px;
   font-family: "Droid-Bold";
@@ -917,7 +913,11 @@ footer {
   line-height: 23px;
 }
 
-.aside__SingleDcsrpt {
+.aside img {
+  width: 100%;
+}
+
+.aside__SingleDcsrpt, .Meal__descript {
   font-family: "Droid-regular";
   font-size: 14px;
   color: #000000;
@@ -969,8 +969,280 @@ footer {
 }
 
 .aside__tagDcript .tagMedia {
+  padding-top: 3px;
+  line-height: 23px;
   float: right;
+  font-size: 13px;
+}
+
+.aside__tagDcript .tagMedia .fa-print {
   font-size: 16px;
+  background-color: transparent;
+  color: #000000 .aside__tagDcript .tagMedia .fa-print;
+}
+
+.aside__tagDcript .tagMedia .fa-print ::before {
+  bottom: -50%;
+}
+
+.aside__tagDcript .blurmedia i {
+  position: relative;
+  background-color: #bababa;
+  border-radius: 5px;
+  width: 17px;
+  height: 16px;
+  color: #ffffff;
+}
+
+.aside__tagDcript .blurmedia i::before {
+  position: absolute;
+  bottom: -30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.sidebar {
+  font-family: "Droid-regular";
+  font-size: 14px;
+  color: #bababa;
+  font-weight: normal;
+}
+
+.sidebar__tittle {
+  color: #000000;
+}
+
+.sidebar__input {
+  margin: 20px 0 50px;
+  border: 1px solid #bababa;
+  display: block;
+  padding: 10px 20px;
+  width: 300px;
+}
+
+.sidebar__input input {
+  width: 93%;
+  border: none;
+}
+
+.sidebar__input input::placeholder {
+  font-style: italic;
+}
+
+.sidebar__list {
+  margin-bottom: 50px;
+}
+
+.sidebar__list__item {
+  margin-top: 15px;
+}
+
+.sidebar__list__item:first-child {
+  margin-top: 25px;
+}
+
+.sidebar__list p {
+  margin-top: 25px;
+}
+
+.sidebar__list .picking {
+  color: #000000;
+}
+
+.sidebar__list .picking__hr {
+  border-bottom: solid #000000 1px;
+}
+
+.sidebar__list hr {
+  display: inline-block;
+  width: 10px;
+  border: none;
+  border-bottom: 1px solid #bababa;
+  margin: 5px 10px 5px 0px;
+}
+
+.jsCalendar-title-name::after {
+  content: " 2019";
+}
+
+@media (min-width: 991px) and (max-width: 1200px) {
+  .sidebar__input {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .sidebar__input {
+    width: 100%;
+  }
+}
+
+.isotope__item__name--shop {
+  margin-bottom: 10px;
+}
+
+.isotope__item__price--shop {
+  font-family: "Droid-Italic";
+  font-size: 14px;
+  color: #000000;
+  font-weight: normal;
+}
+
+.isotope__item--shop {
+  padding-top: 0;
+}
+
+.isotope__item--shop:hover p {
+  display: block;
+}
+
+.isotope__item--shop:hover .shopitem__hover::before {
+  display: block;
+}
+
+.scn__Brg--shop {
+  background-image: url("../images/08shopHeadBrg.jpg");
+  height: 350px;
+}
+
+.isotope__tags--shop {
+  margin: 100px 0 46px;
+}
+
+.shopHeader__tittle {
+  font-size: 48px;
+  letter-spacing: 10px;
+}
+
+.shopHeader__containerTit {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.shop__dish {
+  display: block;
+  text-decoration: none;
+}
+
+.shopitem__hover {
+  width: 100%;
+  position: relative;
+}
+
+.shopitem__hover p {
+  display: none;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: #c3917d;
+  position: absolute;
+}
+
+.shopitem__hover p span {
+  margin-left: 5px;
+  font-family: "Droid-Bold";
+  font-size: 14px;
+  color: #c3917d;
+  font-weight: normal;
+}
+
+.shopitem__hover::before {
+  display: none;
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  border: 1px solid #c3917d;
+}
+
+.Meal {
+  margin: 100px 0 40px;
+}
+
+.Meal__Img {
+  width: 100%;
+}
+
+.Meal__name {
+  margin: 15px 0;
+  font-family: "Droid-Bold";
+  font-size: 30px;
+  color: #000000;
+  font-weight: normal;
+}
+
+.Meal__rate i {
+  color: #c3917d;
+  font-size: 14px;
+}
+
+.Meal__rate span {
+  display: inline-block;
+  margin-left: 10px;
+  font-family: "Droid-regular";
+  font-size: 14px;
+  color: #000000;
+  font-weight: normal;
+}
+
+.Meal__price {
+  margin-top: 30px;
+  font-family: "Droid-regular";
+  font-size: 30px;
+  color: #000000;
+  font-weight: normal;
+}
+
+.Meal__note {
+  font-style: italic;
+}
+
+.Meal__category {
+  font-family: "Droid-Bold";
+  font-size: 12px;
+  color: #b9b9b9;
+  font-weight: normal;
+}
+
+.Meal__Order {
+  margin-bottom: 30px;
+  display: flex;
+}
+
+.Meal__Order .btn--quantity {
+  margin-left: 50px;
+}
+
+.Meal__Quantity {
+  display: flex;
+}
+
+.Meal__Quantity button {
+  height: 40px;
+  width: 40px;
+  background-color: #ffffff;
+  border: 2px solid #c3917d;
+  border-radius: 4px;
+  color: #c3917d;
+}
+
+.Meal__Quantity input {
+  margin: 0 1px;
+  border-radius: 4px;
+  border: 2px solid #c3917d;
+  width: 70px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  font-family: "Droid-Bold";
+  font-size: 14px;
+  color: #c3917d;
+  font-weight: normal;
+}
+
+.Meal__carousel {
+  margin-top: 50px;
 }
 
 /*# sourceMappingURL=style.css.map */

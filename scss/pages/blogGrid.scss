@@ -1,6 +1,6 @@
 .bigTittle--dark{
     @extend .bigTittle;
-    color: #000000;
+    color: $Super-dark;
     margin: 80px 0px 100px;
 }
 
@@ -8,7 +8,7 @@
     a{
         display: block;
         text-decoration: none;
-        color:#000000;
+        color:$Super-dark;
     }
 }
 .BlogItems__item{
@@ -16,14 +16,14 @@
     p{
         line-height: 23px;
         margin: 15px 0 10px;
-        @include fontface($font-main-reg,14px,#000000,normal);
+        @include fontface($font-main-reg,14px,$Super-dark,normal);
     }
     #marg{
         margin-top: 50px;
     }
     &--midDescript{
         margin-top: 25px;
-        @include fontface($font-main-reg,14px,#000000,normal);
+        @include fontface($font-main-reg,14px,$Super-dark,normal);
     }
     span{
         i{
@@ -42,10 +42,10 @@
     //BlogItems__item--qoute
     &--qoute{
         .droidItalic{
-            @include fontface($font-main-italic,14px,#000000,normal);
+            @include fontface($font-main-italic,14px,$Super-dark,normal);
         }
         p{
-            color: #000000;
+            color: $Super-dark;
             margin: 0 0 25px 0;
         }
         padding: 40px 30px;
@@ -55,7 +55,7 @@
             display: inline-block;
             width: 15px;
             border: none;
-            border-bottom: 1px solid #000000;
+            border-bottom: 1px solid $Super-dark;
             margin: 5px 10px 5px 0px;
         }
     }

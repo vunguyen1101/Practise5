@@ -1,5 +1,6 @@
 $main-dark:#c3917d;
 $sub-infomation:#bababa;
+$Super-dark:#000000;
 // #7b8189
 
 ////////////////////////////////////////////////////////////// fonts
@@ -11,11 +12,11 @@ $font-Brush:'Brush';
 $font-Brush2:'Brush2';
 
 
-@font-face {
-    font-family: 'awsome';
-    font-style: normal;
-    src: url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css'); 
-}
+// @font-face {
+//     font-family: 'awsome';
+//     font-style: normal;
+//     src: url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css'); 
+// }
 @font-face {
     font-family: 'Droid-Bold';
     font-style: normal;

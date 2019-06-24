@@ -19,17 +19,17 @@
         @include fontface($font-main-reg,12px,#a3a3a3,normal);
     }
     &__tittle{
-        @include fontface($font-main-bold,18px,#000000,normal);
+        @include fontface($font-main-bold,18px,$Super-dark,normal);
     }
     &__author{
         margin: 10px 0 15px;
-        @include fontface($font-main-italic,14px,#000000,normal);
+        @include fontface($font-main-italic,14px,$Super-dark,normal);
         span{
             color: $main-dark;
         }
     }
     &__descript{
-        @include fontface($font-main-reg,14px,#000000,normal);
+        @include fontface($font-main-reg,14px,$Super-dark,normal);
         line-height: 23px;
     }
     span{

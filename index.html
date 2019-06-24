@@ -10,10 +10,12 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/bootstrap-grid.min.css">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="slick/slick-theme.css">
+    <link rel="stylesheet" href="slick/slick.css">
 </head>
 <body>
     <!-- -------------------------------------------------------------------HEADER ---------------------------------------------------------------->
-    <section class="scn--Brg">
+    <section class="scn__Brg">
         <header>
             <div class="container">      
                 <div class="header__flexbox">
@@ -21,7 +23,7 @@
                     <nav class="nav__desktop">
                         <span><a href="index.html">Home</a></span>
                         <span><a href="#">About</a></span>
-                        <span><a href="#">Menus</a></span>
+                        <span><a href="#MENU">Menus</a></span>
                         <span><a href="#">Gallery</a></span>
                         <span><a href="blogGrid.html">Blog</a></span>
                         <span><a href="#">Pages</a></span>
@@ -34,7 +36,7 @@
                     <nav class="nav__mobile">
                         <span><a href="#">Home</a></span>
                         <span><a href="#">About</a></span>
-                        <span><a href="#">Menus</a></span>
+                        <span><a href="#MENU">Menus</a></span>
                         <span><a href="#">Gallery</a></span>
                         <span><a href="blogGrid.html">Blog</a></span>
                         <span><a href="#">Pages</a></span>
@@ -103,7 +105,7 @@
         </div>
     </section>
     <!-- -------------------------------------------------------------------MENU ---------------------------------------------------------------->
-    <section class="menu">
+    <section id="MENU" class="menu">
         <div class="container">
             <div class="bigTittle">
                 <p>Our Special Menus</p>
@@ -119,7 +121,7 @@
                 </div>
                 <div class="row">
                     <div class="col-lg-3 col-sm-6 breakfast lunch">
-                        <div class="isotope__item ">
+                        <a href="Meal.html" class="isotope__item ">
                             <img src="images/SpecialDish1.jpg" alt="spdis1">
                             <div class="isotope__item__name">
                                 Pear-blue cheese salad
@@ -138,10 +140,12 @@
                                     <span>Small groups(2-4 persons)</span><span>$45.00</span>
                                 </div>
                             </div>
-                        </div>
+                        </a>
+                        
                     </div>
+                    
                     <div class="col-lg-3 col-sm-6 lunch drink">
-                        <div class="isotope__item ">
+                        <a href="Meal.html" class="isotope__item ">
                             <img src="images/SpecialDish2_03.jpg" alt="spdis1">
                             <div class="isotope__item__name">
                                 Avocado basil pasta
@@ -160,10 +164,10 @@
                                     <span>Small groups(2-4 persons)</span><span>$45.00</span>
                                 </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
                     <div class="col-lg-3 col-sm-6 dinner breakfast" >
-                        <div class="isotope__item ">
+                        <a href="Meal.html" class="isotope__item ">
                             <img src="images/SpecialDish3_03.jpg" alt="spdis1">
                             <div class="isotope__item__name">
                                 Garlic bread with chard
@@ -182,10 +186,10 @@
                                     <span>Small groups(2-4 persons)</span><span>$45.00</span>
                                 </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
                     <div class="col-lg-3 col-sm-6 drink dinner">
-                        <div class="isotope__item ">
+                        <a href="Meal.html" class="isotope__item ">
                             <img src="images/SpecialDish4_03.jpg" alt="spdis1">
                             <div class="isotope__item__name">
                                 Chicken enchiladas adobo
@@ -204,12 +208,12 @@
                                     <span>Small groups(2-4 persons)</span><span>$45.00</span>
                                 </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
                 </div>
             </div>
             <div class="btn">
-                <a href="#">SEE ALL MENUS</a>
+                <a href="shop.html">SEE ALL MENUS</a>
             </div>
         </div>
         <div class="menu__bigposter">
@@ -250,7 +254,7 @@
                             Sed imperdiet est et nulla tincidunt, ac aliquam magna tempus. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem dolorem labore officiis repellendus eaque asperiores, reiciendis ad! Molestiae laudantium corporis sit rerum voluptatum nihil. Consequuntur.
                         </div>
                         <div class="btn">
-                            <a href="#">DISCOVER ALL</a>
+                            <a href="shop.html">DISCOVER ALL</a>
                         </div>
                     </div>
                 </div>
@@ -288,6 +292,26 @@
                     <p class="menu__bigposter__tittle1 ">BRYAN KEITH</p>
                     <p class="menu__bigposter__tittle3 menu__bigposter__tittle3--shorter">
                         Chef of Cherry
+                    </p> 
+                </div>
+                <div class="menu__bigposter__tittle">
+                    <p class="menu__bigposter__tittle1">DON’T HEAR FROM US ONLY. HEAR OTHERS, TOO</p>
+                    <p class="menu__bigposter__tittle2--smaller">
+                        In tristique diam a nisl Lorem, ipsum dolor. vulputate eleifend. Etiam varius eu ex Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid rerum repellat sunt dicta veritatis deleniti.
+                    </p>   
+                    <p class="menu__bigposter__tittle1 ">BRYAN KEITH</p>
+                    <p class="menu__bigposter__tittle3 menu__bigposter__tittle3--shorter">
+                        Nguyen Vu
+                    </p> 
+                </div>
+                <div class="menu__bigposter__tittle">
+                    <p class="menu__bigposter__tittle1">DON’T HEAR FROM US ONLY. HEAR OTHERS, TOO</p>
+                    <p class="menu__bigposter__tittle2--smaller">
+                        In tristique diam a nisl Lorem, ipsum dolor. vulputate eleifend. Etiam varius eu ex Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid rerum repellat sunt dicta veritatis deleniti.
+                    </p>   
+                    <p class="menu__bigposter__tittle1 ">BRYAN KEITH</p>
+                    <p class="menu__bigposter__tittle3 menu__bigposter__tittle3--shorter">
+                        Vu Nguyen
                     </p> 
                 </div>
             </div>
@@ -355,12 +379,13 @@
                 <i class="fa fa-google-plus "></i>
                 <i class="fa fa-pinterest-p"></i>
             </div>
-            <span>2015 AliceMaid. Designed with <i class="fa fa-heart-o"></i> by leehari</span>
+            <span>2015 Cherry. Designed with <i class="fa fa-heart-o"></i> by leehari</span>
         </div>
     </div>
        
-    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="js//jquery-3.4.1.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
     <script type="text/javascript" src="js/isotope.pkgd.min.js"></script>
+    <script type= "text/javascript" src="js/slick.min.js"></script>
 </body>
 </html>

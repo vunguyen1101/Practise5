@@ -1,0 +1,157 @@
+.Author{
+    span{
+        i{
+            margin-right: 5px;
+        }
+        margin-right: 35px;
+    }
+}
+
+@include Responsive(XS){
+    .Author{
+        span{
+            text-align: left;
+            margin-bottom: 10px;
+            display: block;
+        }
+    }
+}
+// $font-main-boldItalic
+.aside{
+    img{
+        width: 100%;
+    }
+    line-height: 23px;
+    &__SingleDcsrpt{
+        @include fontface($font-main-reg,14px,$Super-dark,normal);
+        margin: 30px 0;
+    }
+
+    &__verticalLine{
+        @include fontface($font-main-boldItalic,18px,$sub-infomation,normal);
+        border-left: 3px solid $main-dark;
+        padding-left: 20px;
+    }
+    ul{
+        li{
+            list-style-type: none;
+            &::before{
+                content: "■";
+                color: $main-dark;
+                margin-right: 10px;
+            }
+            padding-bottom: 15px;
+            &:last-child{
+                padding: 0;
+            }
+        }
+    }
+    &__tagDcript{
+        i{
+            margin-left: 10px;
+        }
+        @include fontface($font-main-reg,13px,$sub-infomation,normal);
+
+        .tag,.fa-print {
+            color: $Super-dark
+        }
+        .demo{
+            color: $main-dark;
+        }
+        .tagMedia{
+            padding-top: 3px;
+            line-height: 23px;
+            float: right;
+            font-size: 13px;
+            .fa-print{
+                font-size: 16px;
+                background-color: transparent;
+                color: $Super-dark
+                
+                &::before{
+                    bottom: -50%;
+                }
+            }
+        }
+        .blurmedia{
+            i{      
+                &::before{
+                    position: absolute;
+                    bottom: -30%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }   
+                position: relative;
+                background-color:$sub-infomation;
+                border-radius: 5px;
+                width: 17px;
+                height: 16px;
+                color: #ffffff;
+            }
+        }
+    }
+
+}
+.sidebar{
+    @include fontface($font-main-reg,14px,$sub-infomation,normal);
+    &__tittle{
+        color: $Super-dark
+    }
+    &__input{
+        margin: 20px 0 50px;
+        border: 1px solid $sub-infomation;
+        input{
+            width: 93%;
+            border: none;
+            &::placeholder{
+                font-style: italic;
+            }
+        }
+        display: block;
+        padding: 10px 20px;
+        width: 300px;
+
+    }
+    &__list{
+        &__item{
+            &:first-child{
+                margin-top: 25px;
+            }
+            margin-top: 15px;
+        }
+        margin-bottom: 50px;
+        p{
+            margin-top: 25px;
+ 
+        }
+        .picking{
+            &__hr{
+                border-bottom: solid $Super-dark 1px;
+            }
+            color: $Super-dark ;
+        }
+        hr{
+            display: inline-block;
+            width: 10px;
+            border: none;
+            border-bottom: 1px solid $sub-infomation;
+            margin: 5px 10px 5px 0px;
+        }
+    }
+
+}
+.jsCalendar-title-name{
+    &::after{
+        content: " 2019";
+    }
+}
+@media (min-width:991px)and(max-width:1200px){
+    .sidebar__input{
+        width: 100%;
+    }
+}
+@media (max-width:480px){
+    .sidebar__input{
+        width: 100%;
+    }
+}

@@ -1,7 +1,7 @@
 @import 'mixin';
 @import 'variables';
 
-/////components
+/////components - Home
 @import 'Components/header';
 @import 'Components/footer';
 @import 'Components/homeMenu';
@@ -9,68 +9,7 @@
 
 /////pages
 @import 'pages/blogGrid';
+@import 'pages/blogSingle';
+@import 'pages/shop';
+@import 'pages/Meal';
 
-.Author{
-    span{
-        i{
-            margin-right: 5px;
-        }
-        margin-right: 35px;
-    }
-}
-
-@include Responsive(XS){
-    .Author{
-        span{
-            text-align: left;
-            margin-bottom: 10px;
-            display: block;
-        }
-    }
-}
-// $font-main-boldItalic
-.aside{
-    line-height: 23px;
-    &__SingleDcsrpt{
-        @include fontface($font-main-reg,14px,#000000,normal);
-        margin: 30px 0;
-    }
-
-    &__verticalLine{
-        @include fontface($font-main-boldItalic,18px,$sub-infomation,normal);
-        border-left: 3px solid $main-dark;
-        padding-left: 20px;
-    }
-    ul{
-        li{
-            list-style-type: none;
-            &::before{
-                content: "■";
-                color: $main-dark;
-                margin-right: 10px;
-            }
-            padding-bottom: 15px;
-            &:last-child{
-                padding: 0;
-            }
-        }
-    }
-    &__tagDcript{
-        i{
-            margin-left: 10px;
-        }
-        @include fontface($font-main-reg,13px,$sub-infomation,normal);
-
-        .tag,.fa-print {
-            color: #000000;
-        }
-        .demo{
-            color: $main-dark;
-        }
-        .tagMedia{
-            float: right;
-            font-size: 16px;
-        }
-    }
-
-}
