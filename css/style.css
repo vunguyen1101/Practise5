@@ -572,8 +572,7 @@ nav a {
   .header__poster {
     width: 80%;
     margin-top: 10px;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 10%;
   }
   .poster__tag {
     height: 50px;

@@ -273,8 +273,7 @@ nav{
     .header__poster{
         width: 80%;
         margin-top: 10px;
-        left: 50%;
-        transform: translateX(-50%);
+        left: 10%;
     }
     .poster__tag{
         @include txtDefine(50px,50px,normal);
