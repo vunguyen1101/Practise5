@@ -284,8 +284,17 @@ nav{
     .header__poster{
         height: 520px;
     }
+    .discoverMenu{
+        #DiscoverMenu__Img1{
+            width: 80%;
+            margin-left: 10%;
+        }
+        .discoverMenu__description{
+            padding:10px 20px 20px;
+        }
+    }
 }
-@media  (max-width:480px){
+@media(max-width:480px){
     .header__poster{
         height: 560px;
         @media (min-width:360px) {
@@ -297,7 +306,7 @@ nav{
         font-size: 30px;
     }
     .discoverMenu{
-        &__description{
+        .discoverMenu__description{
             padding:10px;
         }
         .bigTittle--lessMargin{

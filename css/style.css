@@ -585,6 +585,13 @@ nav a {
   .header__poster {
     height: 520px;
   }
+  .discoverMenu #DiscoverMenu__Img1 {
+    width: 80%;
+    margin-left: 10%;
+  }
+  .discoverMenu .discoverMenu__description {
+    padding: 10px 20px 20px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -606,7 +613,7 @@ nav a {
     text-align: normal;
     font-size: 30px;
   }
-  .discoverMenu__description {
+  .discoverMenu .discoverMenu__description {
     padding: 10px;
   }
   .discoverMenu .bigTittle--lessMargin {
