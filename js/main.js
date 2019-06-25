@@ -93,4 +93,16 @@ $(document).ready(function(){
   });
 });
 
+
+
+$(document).ready(function(){
+  $('.blogGrid').isotope({
+    itemSelector: '.blogGrid__item',
+    masonry: {
+      gutter:30
+    }
+  });
+});
+
+
 	

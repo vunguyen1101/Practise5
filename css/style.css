@@ -855,30 +855,19 @@ nav a {
   margin: 80px 0px 100px;
 }
 
-.blogGrid a {
-  display: block;
-  text-decoration: none;
-  color: #000000;
-}
-
-.BlogItems__item {
+.blogGrid__item {
   margin-bottom: 50px;
 }
 
-.BlogItems__item p {
+.blogGrid__item p {
   line-height: 23px;
-  margin: 15px 0 10px;
   font-family: "Droid-regular";
   font-size: 14px;
   color: #000000;
   font-weight: normal;
 }
 
-.BlogItems__item #marg {
-  margin-top: 50px;
-}
-
-.BlogItems__item--midDescript {
+.blogGrid__item--midDescript {
   margin-top: 25px;
   font-family: "Droid-regular";
   font-size: 14px;
@@ -886,40 +875,39 @@ nav a {
   font-weight: normal;
 }
 
-.BlogItems__item span {
-  margin-right: 30px;
+.blogGrid__item span {
   font-family: "Droid-regular";
   font-size: 14px;
   color: #bababa;
   font-weight: normal;
 }
 
-.BlogItems__item span i {
+.blogGrid__item span i {
   margin-right: 5px;
 }
 
-.BlogItems__item--post img {
+.blogGrid__item--post img {
   width: 100%;
 }
 
-.BlogItems__item--qoute {
+.blogGrid__item--qoute {
   padding: 40px 30px;
   border: 1px solid #bababa;
 }
 
-.BlogItems__item--qoute .droidItalic {
+.blogGrid__item--qoute .droidItalic {
   font-family: "Droid-Italic";
   font-size: 14px;
   color: #000000;
   font-weight: normal;
 }
 
-.BlogItems__item--qoute p {
+.blogGrid__item--qoute p {
   color: #000000;
   margin: 0 0 25px 0;
 }
 
-.BlogItems__item--qoute hr {
+.blogGrid__item--qoute hr {
   display: inline-block;
   width: 15px;
   border: none;
@@ -950,20 +938,41 @@ nav a {
   line-height: 40px;
 }
 
-@media (min-width: 575px) and (max-width: 991px) {
-  .BlogItems--addGrid {
-    padding-right: 30px;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 50% 50%;
-    grid-gap: 50px 30px;
+.blogGrid img {
+  width: 100%;
+}
+
+.blogGrid__item {
+  width: 370px;
+  margin-bottom: 50px;
+}
+
+.blogGrid a {
+  display: block;
+  text-decoration: none;
+  color: #000000;
+}
+
+@media (max-width: 1199px) {
+  .blogGrid__item {
+    width: 290px;
   }
-  .BlogItems--addGrid .BlogItems__item {
-    width: 100%;
-    margin: 0;
+}
+
+@media (max-width: 991px) {
+  .blogGrid__item {
+    width: 47%;
   }
-  .BlogItems--addGrid .BlogItems__item img {
-    width: 100%;
+  .blogGrid__item--qoute {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 520px) {
+  .blogGrid__item {
+    width: 80%;
+    margin-left: 50%;
+    transform: translateX(-50%);
   }
 }
 
