@@ -83,6 +83,10 @@
     .blogGrid__item--qoute {
         padding: 15px;
     }
+    .bigTittle--dark{
+        margin: 30px;
+        font-size: 40px;
+    }
 }
 @media (max-width:520px){
     .blogGrid{
@@ -92,5 +96,6 @@
             transform: translateX(-50%);
         }
     }
+
 }
 

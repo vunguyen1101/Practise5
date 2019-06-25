@@ -297,4 +297,13 @@ nav{
         @include txtDefine(40px,40px,normal);
         font-size: 30px;
     }
+    .discoverMenu{
+        &__description{
+            padding:10px;
+        }
+        .bigTittle--lessMargin{
+            font-size: 40px;
+            line-height: 40px;
+        }
+    }
 }
