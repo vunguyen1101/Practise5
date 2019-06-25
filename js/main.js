@@ -1,26 +1,24 @@
 /////event for hamburger
 $(document).ready(function(){
+
+
 	$('.nav__hamburger').click(function(){
         $('.nav__mobile').slideToggle(300);
         $('.nav__hamburger').toggleClass('open');
         $('header').toggleClass('darken');
-	});
-});
+  });
 
-////isotope
+  ////isotope
+  var content=$(".isotope .row"),tabs=$(".isotope__tag");
+  tabs.on('click', function(){
 
-$(document).ready(function(){
-    var content=$(".isotope .row"),tabs=$(".isotope__tag");
-    tabs.on('click', function(){
-  
-      tabs.removeClass('active').filter(this).addClass('active');
-      var filter=$(this).data('filter');
-      
-      content.isotope({
-        filter: filter
-      });
-      return false;
+    tabs.removeClass('active').filter(this).addClass('active');
+    var filter=$(this).data('filter');
+    
+    content.isotope({
+      filter: filter
     });
+    return false;
   });
 
   // scroll to section
@@ -34,7 +32,7 @@ $(document).ready(function(){
     },1500);
   });
 
-///Quantity
+  ///Quantity
   $('#add').click(function () {
     if ($('#singleDish').val() < 100) {
       $('#singleDish').val(+$('#singleDish').val() + 1);
@@ -46,9 +44,8 @@ $(document).ready(function(){
     }
   });
 
-// Slick
 
-$(document).ready(function(){
+  //slick
   $('.menu__bigposter--quote .container').slick({
     nextArrow: false,
     prevArrow: false,
@@ -88,21 +85,22 @@ $(document).ready(function(){
           slidesToScroll: 2
         }
       }
-  
+
     ]
   });
-});
 
-
-
-$(document).ready(function(){
+  // masonry
   $('.blogGrid').isotope({
     itemSelector: '.blogGrid__item',
     masonry: {
       gutter:30
     }
   });
+
+
+
 });
+
 
 
 	
