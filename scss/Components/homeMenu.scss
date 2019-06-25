@@ -142,3 +142,21 @@
 }
 
 ///end MENU
+@media (max-width:991px){
+    .discoverMenu{
+        margin-bottom: 30px;
+
+    }
+}
+@media (max-width:768px){
+    .bigTittle{
+        font-size: 50px;
+    }
+    .menu__bigposter{
+        
+        &:not(.menu__bigposter--quote){
+            height: 400px;
+        }
+    }
+
+}

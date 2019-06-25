@@ -66,7 +66,7 @@
             .fa-print{
                 font-size: 16px;
                 background-color: transparent;
-                color: $Super-dark
+                color: $Super-dark;
                 
                 &::before{
                     bottom: -50%;
@@ -153,5 +153,15 @@
 @media (max-width:480px){
     .sidebar__input{
         width: 100%;
+    }
+}
+@media (max-width:768px){
+    .sidebar{
+       margin-top: 50px;
+    }
+}
+@media (max-width:347px){
+    .tagMedia{
+        margin-top: 20px;
     }
 }

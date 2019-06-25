@@ -2,14 +2,9 @@
 @import 'variables';
 
 /////components - Home
-@import 'Components/header';
-@import 'Components/footer';
-@import 'Components/homeMenu';
-@import 'Components/blogs';
+@import 'Components/*';
 
 /////pages
-@import 'pages/blogGrid';
-@import 'pages/blogSingle';
-@import 'pages/shop';
-@import 'pages/Meal';
+@import 'pages/*';
+
 

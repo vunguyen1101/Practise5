@@ -1,6 +1,7 @@
-@mixin txtDefine($height,$align)
+@mixin txtDefine($height,$lnheight,$align)
 {
-    line-height: $height;
+    height: $height;
+    line-height: $lnheight;
     text-align: $align;
 }
 

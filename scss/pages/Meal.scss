@@ -55,11 +55,10 @@
         border-radius: 4px;
         border: 2px solid $main-dark;
         width: 70px;
-        height: 40px;
-        @include txtDefine(40px, center);
+        @include txtDefine(40px,40px, center);
         @include fontface($font-main-bold,14px,$main-dark,normal);
     }
 }
 .Meal__carousel{
-    margin-top: 50px;
+    margin-top: 20px;
 }

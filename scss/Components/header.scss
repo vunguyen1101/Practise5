@@ -26,7 +26,7 @@ nav{
 .scn__Brg{
     width: 100%;
     height: 1290px;
-    background-image: url('../../images/HeadBrg.jpg');
+    background-image: url('../images/HeadBrg.jpg');
     background-position: center;
     background-size: cover;
 }
@@ -192,27 +192,15 @@ nav{
     background-color: rgba($color: $Super-dark, $alpha: 0.8);
 }
 .darken{
-    background-color: rgba($color: $Super-dark, $alpha: 0.8);
+    background-color: rgba($color: #000000, $alpha: 0.8);
 }
 
 
 //////////////////////////////////////////////reponsive
 
 
-@include Responsive(XSM){
-    .header__poster{
-        height:670px ;
-    }
-    .poster__info{
-        padding: 30px 10px;
-    }
-    .poster__tag{
-        width: 100%;
-        display: inline-block;
-        font-size: 30px;
-    }
-}
-@media (max-width:767px){
+
+@media (max-width:768px){
     .nav__hamburger{
         display: block;
     }
@@ -251,5 +239,62 @@ nav{
             margin-top: -200%;
         }
         margin: 0 0 10px 0;
+    }
+}
+
+@media (min-width:768px) and (max-width:1023px){
+    .scn__Brg{
+        height: 900px;
+    }
+    .header__mainlogo{
+        margin-top: 100px;
+    }
+    .poster__tag{
+        @include txtDefine(50px,50px,normal);
+    }
+}
+@media  (max-width:992px){
+
+    .poster__tag{
+        @include txtDefine(50px,50px,normal);
+        font-size: 30px;
+    }
+    .poster__info{
+        padding: 0 15px 15px 15px;
+    }
+    .header__poster{
+        height: 620px;
+    }
+}
+@media  (max-width:767px){
+    .scn__Brg{
+        height: 500px;
+    }
+    .header__poster{
+        width: 80%;
+        margin-top: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .poster__tag{
+        @include txtDefine(50px,50px,normal);
+    }
+    .poster__info{
+        padding: 0 15px 15px 15px;
+    }
+    .header__poster{
+        height: 520px;
+    }
+}
+@media  (max-width:480px){
+    .header__poster{
+        height: 560px;
+        @media (min-width:360px) {
+            height: 600px;
+        }
+    }
+    .poster__tag{
+        @include txtDefine(40px,40px,normal);
+        font-size: 30px;
     }
 }
